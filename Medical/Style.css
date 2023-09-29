@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.a1 {
+    background-color: aliceblue;
+    min-height: 300px;
+    min-width: 200px;
+    position: relative;
+}
+
+.navCont{
+    display: flex;
+    background-color: lightskyblue;
+    width: 100vw;
+    margin-top: 10px;
+    z-index: 100;
+    position: fixed;
+    align-items: center;
+    height: 60px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 60px;
+    margin: auto;
+}
+
+.nav-left-main {
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.nav-left {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 30px;
+    flex-shrink: 0;
+    border-radius: 1rem;
+}
+
+.nav-left:hover {
+    border: 2px solid black;
+}
+
+.nav-left-text {
+    font-size: 2rem;
+}
+
+main { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem; 
+    max-width: 1400px;
+    margin: auto;
+    min-height: 80vh;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.nav-right {
+    margin-left: 100px;
+    display: flex;
+    flex: 1;
+    margin-right: 60px;
+    align-items: center;
+    position: relative;
+}
+
+.navTooltip{
+    position: absolute;
+    display: none;
+    right: -25px;
+    bottom: -30px;
+    font-size: 1.4rem;
+    background-color: rgb(166, 166, 166);
+    color: rgb(54, 54, 54);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+
+.nav-right > button{
+    height: 43px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+.searchLogo{
+    height: 25px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.searchLogo:hover{
+    scale: 1.1;
+}
+
+.search-input {
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.serch-box  {
+    display: flex;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 100%;
+    border-radius: 40px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+} 
+
+.nav-right > div:hover .navTooltip{
+    display: block;
+    z-index: 200;
+}
+
+.post-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.post-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none   ;
+    color: rgb(2, 34, 139);
+}
+
+.post-title:hover{
+    text-decoration: underline;
+}
+
+.post-description {
+    color: black;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.description-container{
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+.action-link:hover .icon {
+    transform: translate(26px);
+    transition: all .15s cubic-bezier(.645,.045,.355,1);
+    opacity: 100;
+}
+
+.action-link:hover {
+    transform: translate(26px);
+    transition: all .15s cubic-bezier(.645,.045,.355,1);
+    color: brown;
+}
+
+
+.icon {
+    cursor: pointer;
+    opacity: 0; 
+    height: 15px; 
+    display: inline-block;
+}
+
+.action-link {
+    position: absolute;
+    right: 80px;
+    bottom: 5px;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-left: 8px;
+    display: flex;
+    align-items: center; 
+    z-index: 99;
+    margin-left: 40px;
+}
+
+.nice-animation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footerContainer{
+    background-color: lightskyblue;
+    width: 100vw;
+}
+
+.footer {
+    background-color: lightskyblue;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    margin: auto;
+}
+
+.footer > section {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-footer {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.p-footer:hover{
+    color: white;
+}
+
+.LogoIMG {
+    width: 50px;
+    height: 100%;
+}
+
