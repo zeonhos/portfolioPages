@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 80px) and (max-width: 767px){
+
+    
+.MainContainer {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-width: 362px;
+    height: auto;
+}   
+
+/* Nav bar */
+
+.MainNavContainer {
+    display: none;
+    position: relative;
+}
+
+.mobileTitle{
+    background-color: brown;
+    width: 100%;
+    min-width: 362px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.mobileText{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.hamburguerMenu {
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    position: fixed;
+    border: none;
+    border-radius: 20px;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+.closeMenu{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    background-color: white;
+    position: absolute;
+    position: fixed;
+    border: none;
+    border-radius: 20px;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    font-size: 3rem;
+    color: brown;
+    display: none;
+}
+
+.hamburguerMenu:hover, .closeMenu:hover {
+    scale: 1.1;
+}
+
+.hamburguerMenu > img{
+    height: 25px;
+    width: auto;
+}
+
+.mobileNavBarContainer{
+    display: none;
+    min-width: 362px;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    position: fixed;
+    background-color: burlywood;
+    overflow-y: auto;
+}
+
+.mobileNavBar{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+} 
+
+.NavButton {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    background-color: burlywood;
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.NavButton:hover, .NavButton00:hover {
+    background-color: antiquewhite;
+    color: brown;
+}
+
+.HomePicture {
+    max-width: 80px;
+    height: 100%;
+    border-radius: 30px;
+    background: none;
+}
+
+.NavButtonPic {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    background: none;
+    border: none;
+    margin-right: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition-delay: .07s;
+}
+
+.mobileSearchBar {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 3px;
+}
+
+.mobileSearchInput {
+    font-size: 2rem;
+    border: 1px solid black;
+    height: 40px;
+    padding: 0 0 0 6px;
+    width: 280px;
+    border: none;
+    background: none;
+}
+
+.mobileSearchInput:focus {
+    border: none;
+    outline: none;
+}
+
+.mobileSearchButton{
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+.mobileSearchLogo {
+    height: 18px;
+    width: auto;
+    background: none;
+    padding: 0 0 0 12px;
+    margin-right: 5px;
+}
+
+/* Main section */
+
+.RecentPostSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 362px;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.Post { 
+    height: auto;
+    background-color: rgba(177, 177, 177, 0.253);
+    border-radius: 10px;
+    width: 100%;
+    min-width: 342px;
+}
+
+.PostImgContainer {
+    height: 400px;
+    cursor: pointer;
+    width: 100%;
+    min-width: 342px;
+}
+
+.PostImg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.PostTextContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.PostTitle {
+    font-size: 3rem;
+    color: brown;
+    text-decoration: none;
+}
+
+.PostTitle:hover {
+    text-decoration: underline;
+}
+
+.PostDescription { 
+    font-size: 2.5rem;
+    color: black;   
+    text-overflow: ellipsis ;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-top: 10px;
+}
+
+.TagContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    height: auto;
+    padding: 10px;
+}
+
+.PostTags {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+    cursor: pointer;
+}
+
+.PostTags:hover {
+    text-decoration: underline;
+}
+
+.sectionContainer {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.PresentationSection {
+    width: 100%;
+    min-width: 342px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(177, 177, 177, 0.253);
+    border-radius: 20px;
+}
+
+.PresentationPic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.PresentationPicContainer {
+    padding: 15px;
+}
+
+.PresentationTextContainer {
+    padding: 15px;
+}
+
+.PresentationTextTitle {
+    font-size: 3rem;
+    color: brown;
+    font-weight: bold;
+}
+
+.PresentationTextTitle:hover {
+    text-decoration: underline;
+}
+
+.PresentationTextDescription {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20PX;
+}
+
+.VerMasButtonContainer {
+    margin: auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.VerMasButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.VerMasText {
+    font-size: 3rem;
+    font-weight: bold;
+    color: brown;
+    margin-right: 10px;
+}
+
+.FooterContainer {
+    width: 100%;
+    min-width: 362px;
+    margin-top: 40px;
+    background-color: brown;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.FooterInfo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.FooterInfo:hover {
+    opacity: 0.8;
+}
+
+.ArrowDown {
+    height: 15px;
+    width: 100%;
+    display: none;
+}
+
+.VerMasButton:hover .ArrowDown {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.backgroundContainer {
+    display: none;
+}
+
+.recentText {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+
+}

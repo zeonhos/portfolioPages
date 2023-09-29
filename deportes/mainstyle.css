@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.mainsec01 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1000px; 
+    min-width: 1000px; 
+    margin: auto; 
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.mainsecdiv01 {
+    border: solid 1px gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.mainsecdiv02 {
+    border: solid 1px gray;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mainsecdiv02div {
+    border: solid 1px gray;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.mainsecdiv01div01 {
+    background-color: dimgrey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainSecTitleDiv:hover .Articleh1 {
+    text-decoration: underline;
+}
+
+.PostImg01 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.Articleh1 {
+    font-size: 4rem;
+    color: white;
+}
+
+
+.Articleh2 {
+    font-size: 2rem;
+    color: yellow;
+}
+
+
+.Articleh3 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.ArticleRelatedInfo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.ArticleRelatedInfo:hover {
+    text-decoration: underline  ;
+}
+
+.RelatedDiv {
+    margin-left: 20px;
+}
+
+.ArticleRelatedInfoLi {
+    margin-top: 10px;
+}
+
+.MainSecdiv02h2 {
+    color: red;
+    font-size: 1.5rem;
+}
+
+.MainSecdiv02h1 {
+    color: black;
+    font-size: 2.5rem;
+}
+
+.MainSecdiv02h1:hover {
+    text-decoration: underline;
+}
+
+.mainsec02 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px; 
+    min-width: 1000px; 
+    margin: auto; 
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.mainsec02div {
+    border: solid 1px gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.MainLink {
+    font-size: 3rem;
+    text-decoration: none;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}

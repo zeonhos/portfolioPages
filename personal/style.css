@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+}
+
+.upperPart {
+    background-color: rgb(22, 84, 115);
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.mainHolder{
+    width: 80vw;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > div > a, .navbar > div > button, .navbar > div > img {
+    margin-left: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+.logoIMG{
+    height: 30px;
+    width: auto;
+}
+
+.searchButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.mainDescription{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.mainDescription > div > h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mainDescription > div > h1 {
+    color: white;
+    font-size: 10rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mainDescription > div > p {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttonsHolder {
+    margin-bottom: 20px;
+}
+
+.buttonHire, .buttonWorks {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonHire {
+    background-color: rgb(16, 141, 131);
+    border: none;
+}
+
+.buttonWorks {
+    background-color: rgba(132, 132, 132, 0.659);
+    border: 1px solid white;
+}
+
+.buttonHire:hover, .buttonWorks:hover {
+    opacity: 0.8;
+}
+
+.mainPicHolder {
+    width: 60%;
+    margin: auto;
+}
+
+.mainPic {
+    width: 100%;
+    height: auto;
+}
+
+.lowerPart {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.mainDescription02 {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDescription02 > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.mainDescription02 > h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mainDescription02 > p {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.infoHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.infoP {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.infoS {
+    font-weight: bold;
+}
+
+.socialHolder {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.socialHolder > p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.socialLogos {
+    width: auto;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.lowbuttonsHolder {
+    margin-top: 20px;
+}
+
+.buttonHire02, .buttonWorks02 {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonHire02:hover, .buttonWorks02:hover {
+    opacity: 0.8;
+}
+
+.buttonHire02 {
+    background-color: rgb(22, 84, 115);
+}
+
+.buttonWorks02{
+    background-color: rgb(16, 141, 131);
+}

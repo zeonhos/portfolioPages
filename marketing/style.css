@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue01: rgba(128, 228, 243);
+    --pink01: rgba(233, 169, 217);
+    --pink02: rgb(232, 186, 220);
+    --purple01: rgba(154, 149, 200);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    position: relative;
+}
+
+.mainHolder{
+    background-image: linear-gradient(180deg, var(--blue01), var(--pink01));
+    height: 100vh;
+    position: absolute;
+}
+
+.mainNav{ 
+    margin-top: 30px;
+    margin-bottom: 80px;
+    width: 100vw;
+    background-color: rgba(86, 86, 86, 0.064);
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainNav > div{
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 50px;
+}
+
+.mainNav > div > div {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.aNavIMG{
+    height: 70px;
+    width: auto;
+}
+
+.aNav, .aNavB{
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.aNavB{
+    background-color: var(--pink01);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.aNavB:hover{
+    background-color: var(--pink02);
+}
+
+.aNav:hover{
+    opacity: 0.8;
+}
+
+main{
+    margin: auto;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mainDescription > h1 {
+    color: var(--purple01);
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.mainDescription > p{
+    color: azure;
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.mainDescription > button{
+    background-color: var(--pink01);
+    color: white;
+    border: none;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.mainDescription > button:hover{
+    background-color: var(--pink02);
+}
+
+.mainIMG{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainIMG > img {
+    height: 100%;
+    width: auto;
+}
+
+footer{
+    padding-top: 80px;
+    margin: auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-end;
+}
+
+.footerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerDiv > img {
+    height: 100px;
+}
+
+.footerDiv > h1{
+    font-size: 100px;
+    font-weight: lighter;
+    color: white;
+    margin: 0;
+}
+
+.footerDiv > h2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 2rem;
+}

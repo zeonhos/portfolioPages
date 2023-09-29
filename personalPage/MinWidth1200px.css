@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.MainContainer {
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    min-width: 1200px;
+    height: auto;
+    margin: auto;
+    z-index: 1;
+    border-left: 2px solid rgba(165, 42, 42, 0.432);
+    border-right: 2px solid rgba(165, 42, 42, 0.432);
+}   
+
+/* Nav bar */
+
+.MainNavContainer{
+    position: relative;
+    justify-content: center;
+    min-width: 1200px;
+    margin: auto;
+} 
+
+.mobileOnly{
+    display: none;
+}
+
+.MainNav {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    height: 42px;
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.NavButton {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition-delay: .07s;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.collectionHolder{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.NavButton:hover, .collectionText:hover {
+    background-color: antiquewhite;
+    color: brown;
+}
+
+.collectionHolder:hover .collectionsOption01 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: burlywood;
+    bottom: -85px;
+    right: 0;
+    width: 100%;
+}
+
+.collectionText{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    transition-delay: .07s;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.collectionsOption01 {
+    display: none;
+    z-index: 100;
+    text-align: center;
+}
+
+.HomePicture {
+    max-width: 80px;
+    height: 100%;
+    border-radius: 30px;
+    background: none;
+}
+
+.NavButtonPic {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    background: none;
+    border: none;
+    margin-right: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition-delay: .07s;
+}
+
+.NavButtonPic:hover {
+    scale: 1.1;
+}
+
+.MainImageContainer {
+    height: 200px;
+    min-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.MainPicture {
+    object-fit: cover;
+    object-position: 0 70%;
+    height: 100%;
+    width: 100%;
+}
+
+.searchBar {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 3px;
+}
+
+.searchInput {
+    font-size: 1.5rem;
+    border: 1px solid black;
+    height: 30px;
+    padding: 0 0 0 6px;
+    width: 300px;
+    border: none;
+    background: none;
+}
+
+.searchInput:focus {
+    border: none;
+    outline: none;
+}
+
+.searchButton{
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+.searchLogo {
+    height: 18px;
+    width: auto;
+    background: none;
+    padding: 0 0 0 12px;
+    margin-right: 5px;
+}
+
+/* Main section */
+
+.RecentPostSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-width: 1160px;
+    margin: auto;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 20px;
+        overflow: hidden;
+}
+
+.Post { 
+    max-height: 360px;
+    background-color: rgba(177, 177, 177, 0.253);
+    border-radius: 10px;
+    position: relative;
+}
+
+.PostImgContainer {
+    height: 200px;
+    cursor: pointer;
+}
+
+.PostImg{
+    object-fit: cover;
+    object-position: 0 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.PostTextContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    max-height: 100px;
+}
+
+.PostTitle {
+    font-size: 2rem;
+    color: brown;
+    text-decoration: none;
+}
+
+.PostTitle:hover {
+    text-decoration: underline;
+}
+
+.PostDescription { 
+    font-size: 1.6rem;
+    color: black;   
+    text-overflow: ellipsis ;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.TagContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    height: auto;
+    padding: 10px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.PostTags {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+    cursor: pointer;
+}
+
+.PostTags:hover {
+    text-decoration: underline;
+}
+
+.PresentationSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 1160px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgba(177, 177, 177, 0.253);
+    border-radius: 20px;
+}
+
+.PresentationPic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.PresentationPicContainer {
+    padding: 20px;
+}
+
+.PresentationTextContainer {
+    padding: 20px;
+}
+
+.PresentationTextTitle {
+    font-size: 3.5rem;
+    color: brown;
+    font-weight: bold;
+}
+
+.PresentationTextTitle:hover {
+    text-decoration: underline;
+}
+
+.PresentationTextDescription {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20PX;
+}
+
+.VerMasButtonContainer {
+    margin: auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.VerMasButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.VerMasText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: brown;
+    margin-right: 10px;
+}
+
+.FooterContainer {
+    min-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: brown;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.FooterInfo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+
+.FooterInfo:hover {
+    opacity: 0.8;
+}
+
+.ArrowDown {
+    height: 15px;
+    width: 100%;
+    display: none;
+}
+
+.VerMasButton:hover .ArrowDown {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.backgroundContainer {
+    top:  0px;
+    position: absolute;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+}
+
+.background01 {
+    height: 100vh;
+    width: 50vw;
+}
+
+.background02 {
+    height: 100vh;
+    width: 50vw;
+}
+
+.backImg01 {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    object-position: -350px;
+}
+
+.backImg02{
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    object-position: -230px;
+}
+
+.recentText {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+.sectionContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+}

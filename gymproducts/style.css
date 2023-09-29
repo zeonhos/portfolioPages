@@ -1,0 +1,597 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+html {
+    font-size: 62.5%;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --background: rgb(30, 30, 30);
+    --green: rgb(132, 220, 31);
+    --backgoundGray: rgb(238, 238, 238);
+}
+
+body {
+    background-color: var(--background);
+}
+
+nav {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+nav > a > img {
+    height: 60px;
+}
+
+nav > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav > div > a {
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+nav > div > a:hover {
+    color: var(--green);
+}
+
+nav > div > a > img {
+    height: 20px;
+    width: auto;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.rightPanel > div > h1 {
+    margin-top: 40px;
+    font-size: 3rem;
+    font-weight: 300;
+    color: white;
+}
+
+.rightPanel > div > p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    margin-top: 20px;
+}
+
+.mainImgWrap {
+    margin: 20px 0px;
+    position: relative;
+}
+
+.emptyDiv{
+    position: absolute;
+    height: 92%;
+    width: 98%;
+    border: 2px solid var(--green);
+    bottom: 4%;
+    left: 1%;
+}
+
+.mainImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.mainImgWrap > h2 {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 2px var(--green);
+}
+
+.mainImgWrap > h1 {
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    left: 5%;
+    top: 30%
+}
+
+.mainImgWrap > button {
+    position: absolute;
+    background-color: var(--green);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 5%;
+    top: 70%;
+    border: none;
+    cursor: pointer;
+}
+
+.mainImgWrap > button:hover, .productsContainer > button:hover, .leftPicture > button:hover {
+    transition: 0.2s;
+    background-color: white;
+    scale: 1.1;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 0px 29px 0px;
+}
+
+.upperOptions {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--backgoundGray);
+    padding: 20px;
+}
+
+.upperOptions > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upperOptions > div > svg {
+    fill: gray;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.upperOptions > div > span {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.upperOptions > div > svg:hover {
+    fill: gainsboro;
+}
+
+.upperOptions > div > div {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.optionDiv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.optionDiv > select {
+    appearance: none;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    color: gray;
+    line-height: 22px;
+    width: 300px;
+    padding: 10px;
+    outline: 1px solid gainsboro;
+    z-index: 3;
+    background: none;
+}
+
+.optionDiv > img {
+    position: absolute;
+    right: 10px;
+    height: 10px;
+    align-self: center;
+    z-index: 2;
+}
+
+.upperOptions > div > div > select > option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mainProducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.productsContainer > img {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.starHolder {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.starHolder > svg {
+    height: 15px;
+    width: auto;
+    fill: rgb(232, 197, 0);
+}
+
+.productsContainer > h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: auto;
+}
+
+.productsContainer > span {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: auto;   
+}
+
+.productsContainer > button {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    background-color: var(--green);
+    bottom: 0;
+    align-self: center;
+    padding: 10px 20px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.rightFunctions {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.rightFunctions > a {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 0px 5px 0px;
+}
+
+.rightFunctions > a > img {
+    width: 20px;
+    margin: auto;
+}
+
+.productsContainer:hover > button {
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
+    bottom: 20px;
+}
+
+.productsContainer:hover > .rightFunctions {
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
+    right: 20px;
+}
+
+.rightFunctions > a:hover {
+    transition: 0.5s;
+    background-color: var(--green);
+}
+
+.upperOptions > div > button {
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.23);
+    cursor: pointer;
+}
+
+.upperOptions > div > button:hover {
+    background-color: var(--green);
+}
+
+.leftPanel {
+    margin-top: 40px;
+    padding-right: 20px;
+}
+
+.shopBy, .filterBy, .newProducts {
+    display: flex; 
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.shopBy > h1, .filterBy > h1{
+    font-size: 2rem;
+    font-weight: 300;
+    color: gray;
+    padding: 10px 20px;
+    background-color: gainsboro;
+}
+
+.optionsButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.optionsButton > button {
+    cursor: pointer;
+    background: none;
+}
+
+.optionsButton > button > img {
+    width: 20px;
+}
+
+.pricesField{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+.filterBy > h2 {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filterBy > div {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.filterBy > div > input {
+    scale: 1.3;
+    margin-right: 10px;
+}
+
+.filterBy > div > label {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.filterBy > div > button {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color01{
+    background-color: blue;
+}
+
+.color02 {
+    background-color: gray;
+}
+
+.color03{
+    background-color: green;
+}
+
+.color04{
+    background-color: orange;
+}
+
+.color05{
+    background-color: pink;
+}
+
+.color06{
+    background-color: blueviolet;
+}
+
+.newProducts > h1{
+    font-size: 2rem;
+    font-weight: 300;
+    color: gray;
+    padding: 10px 20px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+}
+
+.newProducts > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.newProducts > div > img {
+    width: 80px;
+    height: 100%;
+}
+
+.newProducts > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.newProducts > div > div > h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.newProducts > div > div > span {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.starHolder02 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.starHolder02 > svg {
+    height: 15px;
+    width: auto;
+    fill: rgb(232, 197, 0);
+}
+
+.leftPicture {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.leftPicture > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.leftPicture > div {
+    position: absolute;
+    border: 1px solid var(--green);
+    width: 95%;
+    height: 95%;
+    bottom: 2.5%;
+    left: 2.5%;
+    z-index: 2;
+}
+.leftPicture > h1 {
+    position: absolute;
+    top: 18%;
+    font-size: 3rem;
+    color: white;
+    z-index: 4;
+    align-self: center;
+}
+
+.leftPicture > h2 {
+    position: absolute;
+    top: 10%;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 2px var(--green);
+    z-index: 4;
+    align-self: center;
+}
+
+.leftPicture > button {
+    position: absolute;
+    align-self: center;
+    background-color: var(--green);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 28%;
+    border: none;
+    cursor: pointer;
+    z-index: 4;
+}
+
+footer {
+    padding-top: 40px;
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+footer > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div > p{
+    font-size: 2rem;
+    color: white;
+    margin-top: 10px;
+}
+
+footer > div > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer > div > h1 {
+    color: var(--green);
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+footer > div > a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+footer > div > a:hover {
+    color: var(--green);
+}
+
+footer > div > span {
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+footer > div > span > strong {
+    color: var(--green);
+}

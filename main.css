@@ -1,0 +1,219 @@
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainOrange: rgba(224, 92, 15);
+    --mainGray: rgb(22, 22, 22);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background-color: black;
+}
+
+.mainWrap {
+    width: 80vw;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.navWrap {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logoWrap {
+    display: flex;
+    align-items: center;
+}
+
+.logoWrap > img {
+    height: 50px;
+    width: auto;     
+}
+
+.commonLinks > a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.commonLinks > a:hover {
+    background-color: var(--mainOrange);
+}
+
+.upperInfo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    margin-bottom: 40px;
+}
+
+.upperText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;  
+    width: 55%;
+    top: 80px;
+}
+
+.upperText > h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.upperText > h1 {
+    color: white;
+    font-size: 7rem;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.upperText > p {
+    color: white;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 30px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imgWrap {
+    height: 500px;
+    position: absolute;
+    right: 0;
+    border: none;
+}
+
+.imgWrap > img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    border: none;
+}
+
+.buttonA, .buttonB {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-size: 2rem;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.buttonA {
+    background-color: var(--mainOrange);
+    border: none;
+    border: 1px solid var(--mainOrange);
+    color: white;
+}
+
+.buttonA:hover, .buttonB:hover {
+    opacity: 0.8;
+}
+
+.buttonB {
+    background-color: var(--mainGray);
+    border: 1px solid white;
+    color: white;
+}
+
+.middleH1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.middleH1 > h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+.templates {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.templates > a {
+    position: relative;
+    height: 200px;
+    border-radius: 60px;
+}
+
+.templates > a > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.templates > a > div {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--mainGray);
+}
+
+.templates > a:hover div {
+    background-color: var(--mainOrange);
+}
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--mainOrange);
+}
+
+footer > a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+footer > a > img {
+    height: 20px;
+    width: auto;
+}
