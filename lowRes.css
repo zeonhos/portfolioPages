@@ -20,16 +20,14 @@ body{
 }
 
 .mainWrap {
-    width: 80vw;
-    min-height: 100vh;
-    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navWrap {
     padding: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -42,6 +40,12 @@ body{
 .logoWrap > img {
     height: 50px;
     width: auto;     
+}
+
+.commonLinks {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .commonLinks > a {
@@ -64,7 +68,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: 700px;
     margin-bottom: 40px;
 }
 
@@ -72,8 +76,7 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;  
-    width: 55%;
-    top: 80px;
+    top: 0;
 }
 
 .upperText > h2 {
@@ -98,17 +101,10 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.imgWrap {
-    height: 500px;
-    position: absolute;
-    right: 0;
-    border: none;
-}
-
 .imgWrap > img {
     object-fit: cover;
+    width: 100%;
     height: 100%;
-    width: auto;
     border: none;
 }
 
@@ -157,13 +153,13 @@ body{
 
 .templates {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
 .templates > a {
     position: relative;
-    height: 200px;
+    height: 300px;
     border-radius: 60px;
 }
 

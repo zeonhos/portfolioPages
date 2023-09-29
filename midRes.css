@@ -20,9 +20,8 @@ body{
 }
 
 .mainWrap {
-    width: 80vw;
-    min-height: 100vh;
-    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navWrap {
@@ -188,7 +187,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--mainGray);
